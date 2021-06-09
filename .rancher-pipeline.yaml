@@ -1,8 +1,5 @@
 stages:
-- name: test
+- name: Deploy
   steps:
-  - runScriptConfig:
-      image: busybox
-      shellScript: echo $TEST
-    env:
-      TEST: ${CICD_GIT_URL}
+  - applyYamlConfig:
+      path: ./deployment.yaml
