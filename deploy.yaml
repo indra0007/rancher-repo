@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx1
-  namespace: cattle-global-data
+  namespace: kube-system
 spec:
   replicas: 1
   selector:
