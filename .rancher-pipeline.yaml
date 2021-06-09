@@ -3,3 +3,9 @@ stages:
   steps:
   - applyYamlConfig:
       path: ./deploy.yaml
+    env:
+      VAR1: VAL
+    envFrom:
+    - sourceName: pipeline-api-key
+      sourceKey: API_TOKEN
+notification: {}
