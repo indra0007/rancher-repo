@@ -1,0 +1,7 @@
+stages:
+  - name: Deploy nginx
+    steps:
+      - applyYamlConfig:
+          path: ./deploy.yaml
+
+
