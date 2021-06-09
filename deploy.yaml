@@ -5,7 +5,6 @@ metadata:
   namespace: cattle-global-data
 spec:
   replicas: 1
-  revisionHistoryLimit: 10
   selector:
     matchLabels:
       workload.user.cattle.io/workloadselector: deployment-cattle-global-data-nginx
